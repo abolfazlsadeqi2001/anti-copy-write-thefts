@@ -1,0 +1,26 @@
+<html>
+<head>
+<meta charset="utf-8" />
+
+<meta name="author" content="abolfazlsadeqi2001" />
+<meta name="description" content="this example will prevent theives to theft your website contents by selecting and coping" />
+<meta name="keywords" content="unselectable,copy write" />
+<meta name="view-port" content="width=device-width,initiale-scale=1.0" />
+
+<style>
+	/* prevent selection */
+	p.unselectable {
+		user-select: none;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+        -webkit-user-select: none;
+        -o-user-select: none;
+	}
+</style>
+</head>
+<body>
+	<p class="unselectable"><mark>unselectable</mark>Hello this is Abolfazl Sadeqi from Iran.I'm a back-end programmer.I'd love to creating websites</p>
+	<p class="clipboard-preventer" oncut="return false" oncopy="return false"><mark>keyboard preventer</mark>Hello this is Abolfazl Sadeqi from Iran.I'm a back-end programmer.I'd love to creating websites</p>
+	<input type="text" placeholder="clipboard tester" />
+</body>
+</html>
