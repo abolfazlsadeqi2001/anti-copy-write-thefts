@@ -16,11 +16,17 @@
         -webkit-user-select: none;
         -o-user-select: none;
 	}
+	/* make style */
+	p.unselectable-seems::selection {
+		background-color : white;
+		color : black;
+	}
 </style>
 </head>
 <body>
 	<p class="unselectable"><mark>unselectable</mark>Hello this is Abolfazl Sadeqi from Iran.I'm a back-end programmer.I'd love to creating websites</p>
 	<p class="clipboard-preventer" oncut="return false" oncopy="return false"><mark>keyboard preventer</mark>Hello this is Abolfazl Sadeqi from Iran.I'm a back-end programmer.I'd love to creating websites</p>
+	<p class="unselectable-seems"><mark>make it seems to be unselectable</mark>Hello this is Abolfazl Sadeqi from Iran.I'm a back-end programmer.I'd love to creating websites</p>
 	<input type="text" placeholder="clipboard tester" />
 </body>
 </html>
